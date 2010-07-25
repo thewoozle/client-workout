@@ -1,0 +1,1713 @@
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateClientWorkouts (20100722211307)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "client_workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "client_name" varchar(255), "trainer" varchar(255), "duration_mins" integer, "date_of_workout" date, "paid_amount" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100722211307')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("client_workouts")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 14:14:37) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 14:14:54) [GET]
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 14:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/clients_workout" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 14:16:25) [GET]
+
+ActionController::RoutingError (No route matches "/clients_workouts" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-22 14:16:37) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 7096ms (View: 7083, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-22 14:16:50) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 93ms (View: 81, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-22 14:17:39) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"300", "client_name"=>"Michael McGuire", "trainer"=>"Helga", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"22"}, "authenticity_token"=>"nTV0c4voYtMSxwGW9bYKMKhxRRm53bvk3ti4yn5Aswg="}
+  [4;35;1mClientWorkout Create (2.0ms)[0m   [0mINSERT INTO "client_workouts" ("created_at", "client_name", "paid_amount", "trainer", "updated_at", "duration_mins", "date_of_workout") VALUES('2010-07-22 21:17:39', 'Michael McGuire', 300.0, 'Helga', '2010-07-22 21:17:39', 90, '2010-07-22')[0m
+Redirected to http://localhost:3000/client_workouts/1
+Completed in 30ms (DB: 2) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-22 14:17:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-22 14:17:44) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-22 14:37:34) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #19 of app/views/layouts/client_workouts.html.erb:
+16: 	<% end %>
+17: </span>	
+18: 
+19: <p style="color: green"><%= flash:notice %></p>
+20: 
+21: <%= yield %>
+22: 
+
+    C:1:in `flash'
+    C:1:in `__send__'
+    C:1:in `flash'
+    app/views/layouts/client_workouts.html.erb:19
+    app/controllers/client_workouts_controller.rb:7:in `index'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (130.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-22 14:38:10) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 33ms (View: 18, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-22 14:38:37) [POST]
+  Parameters: {"search_string"=>"michael", "commit"=>"search", "authenticity_token"=>"nTV0c4voYtMSxwGW9bYKMKhxRRm53bvk3ti4yn5Aswg="}
+
+ActionController::UnknownAction (No action responded to find. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 22:14:55) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 5849ms (View: 5842, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-24 22:15:47) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 43ms (View: 37, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-24 22:16:35) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"12.00", "client_name"=>"Michael McGuire", "trainer"=>"Bob", "duration_mins"=>"5", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;35;1mClientWorkout Create (1.0ms)[0m   [0mINSERT INTO "client_workouts" ("created_at", "client_name", "paid_amount", "trainer", "updated_at", "duration_mins", "date_of_workout") VALUES('2010-07-25 05:16:35', 'Michael McGuire', 12.0, 'Bob', '2010-07-25 05:16:35', 5, '2010-07-25')[0m
+Redirected to http://localhost:3000/client_workouts/2
+Completed in 64ms (DB: 1) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-24 22:16:35) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 2) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/client_workouts/2]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 22:16:39) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 22:28:03) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:28:14) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+ActionView::MissingTemplate (Missing template client_workouts/find.erb in view path app/views):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:40:08) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% @client_workouts.each do |client_workout| %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:42:13) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:45:02) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:46:39) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:47:05) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:47:34) [POST]
+  Parameters: {"search_string"=>"Michael ", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 22:48:13) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:48:28) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 22:48:51) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:48:57) [POST]
+  Parameters: {"search_string"=>"Bob", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 22:49:54) [POST]
+  Parameters: {"search_string"=>"Bob", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/client_workouts/find.html.erb:
+8:     <th>Paid amount</th>
+9:   </tr>
+10: 
+11: <% for client_workout in @client_workouts %>
+12:   <tr>
+13:     <td><%=h client_workout.client_name %></td>
+14:     <td><%=h client_workout.trainer %></td>
+
+    app/views/client_workouts/find.html.erb:11
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-24 22:59:02) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected tLBRACK, expecting kDO or '{' or '('
+		params [: search_string], params [:search_string]]])
+		        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting kEND
+		params [: search_string], params [:search_string]]])
+		                                                  ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-24 22:59:40) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected tLBRACK, expecting kDO or '{' or '('
+		params [:search_string], params [:search_string]])
+		        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ',', expecting kEND
+		params [:search_string], params [:search_string]])
+		                        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting kEND
+		params [:search_string], params [:search_string]])
+		                                                 ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-24 22:59:48) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected tLBRACK, expecting kDO or '{' or '('
+		params [:search_string], params [:search_string]])
+		        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ',', expecting kEND
+		params [:search_string], params [:search_string]])
+		                        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting kEND
+		params [:search_string], params [:search_string]])
+		                                                 ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-24 23:00:14) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected tLBRACK, expecting kDO or '{' or '('
+		params [:search_string], params [:search_string]])
+		        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ',', expecting kEND
+		params [:search_string], params [:search_string]])
+		                        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting kEND
+		params [:search_string], params [:search_string]])
+		                                                 ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-24 23:00:15) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected tLBRACK, expecting kDO or '{' or '('
+		params [:search_string], params [:search_string]])
+		        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ',', expecting kEND
+		params [:search_string], params [:search_string]])
+		                        ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting kEND
+		params [:search_string], params [:search_string]])
+		                                                 ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 23:00:48) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 23:00:48) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 23:00:54) [POST]
+  Parameters: {"search_string"=>"Bob", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 23:01:13) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 23:01:52) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 23:01:57) [POST]
+  Parameters: {"search_string"=>"Michael", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 23:05:20) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 23:05:27) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-24 23:10:42) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-24 23:10:48) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 06:36:31) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 06:42:24) [GET]
+
+SyntaxError (C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:18: syntax error, unexpected '=', expecting ']'
+		:conditions => [:client_name =? OR trainer =?, 
+		                              ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:19: syntax error, unexpected ']', expecting '='
+		params[:search_string], params[:search_string]])
+		                                               ^
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 06:45:08) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 06:45:19) [POST]
+  Parameters: {"search_string"=>"Michael", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name =? OR trainer =?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 06:48:57) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 06:49:02) [POST]
+  Parameters: {"search_string"=>"Michael", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+
+NoMethodError (undefined method `include?' for :"client_name ==? OR trainer ==?":Symbol):
+  app/controllers/client_workouts_controller.rb:17:in `find'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 06:49:22) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 06:49:28) [POST]
+  Parameters: {"search_string"=>"Michael McGuire", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE (client_name ='Michael McGuire' OR trainer ='Michael McGuire') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 07:40:40) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 07:40:45) [POST]
+  Parameters: {"search_string"=>"michael", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE (client_name ='michael' OR trainer ='michael') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 07:41:11) [POST]
+  Parameters: {"search_string"=>"Bob", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE (client_name ='Bob' OR trainer ='Bob') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2010-07-25 07:49:58) [POST]
+  Parameters: {"search_string"=>"Bob", "commit"=>"search", "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE (client_name ='Bob' OR trainer ='Bob') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:16:44) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:16:45) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:20:45) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 09:20:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css%20media=" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:21:48) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+ERROR: compiling _run_erb_app47views47layouts47client_workouts46html46erb RAISED compile error
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+... stylesheet_link_tag 'scaffold' ).to_s); @output_buffer.conc...
+                              ^
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: unterminated string meets end of file
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47layouts47client_workouts46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>ClientWorkouts: "
+
+
+
+
+
+; @output_buffer.concat(( controller.action_name ).to_s); @output_buffer.concat "</title>\n  "
+; @output_buffer.concat(( stylesheet_link_tag 'default).to_s); @output_buffer.concat " \n  "
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold' ).to_s); @output_buffer.concat "\n</head>\n<body>\n\n<span style=\"text-align: right\">\n\t"
+
+
+
+
+;  form_tag "/client_workouts/find" do ; @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( text_field_tag :search_string ).to_s); @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( submit_tag "search" ).to_s); @output_buffer.concat "\n\t"
+;  end ; @output_buffer.concat "\n</span>\t\n\n<p style=\"color: green\">"
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n\n"
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n\n</body>\n</html>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:352:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/programming_projects/client_workout/app/controllers/client_workouts_controller.rb:7:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+... stylesheet_link_tag 'scaffold' ).to_s); @output_buffer.conc...
+                              ^
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: unterminated string meets end of file
+C:/programming_projects/client_workout/app/views/layouts/client_workouts.html.erb:9: syntax error, unexpected $end, expecting ')') on line #9 of app/views/layouts/client_workouts.html.erb:
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>ClientWorkouts: <%= controller.action_name %></title>
+8:   <%= stylesheet_link_tag 'default%> 
+9:   <%= stylesheet_link_tag 'scaffold' %>
+10: </head>
+11: <body>
+12: 
+
+    app/views/layouts/client_workouts.html.erb:9:in `compile!'
+    app/controllers/client_workouts_controller.rb:7:in `index'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:22:07) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:22:44) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:24:24) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:27:24) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 29ms (View: 17, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:28:13) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 26ms (View: 15, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:28:50) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:28:50) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:46:38) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:46:58) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:49:05) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:49:55) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:50:52) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:51:10) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:51:22) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 29ms (View: 17, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:51:42) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:52:09) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:52:19) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:52:20) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:52:23) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:53:28) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:53:38) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:53:42) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:53:57) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 09:54:10) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:12:02) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:12:16) [GET]
+  [4;35;1mClientWorkout Load (2.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:24:47) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:25:04) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:25:41) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:26:52) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:27:27) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:27:40) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:28:16) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:28:25) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:28:45) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:29:18) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:42:21) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:46:04) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-25 10:46:10) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 100ms (View: 92, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:46:29) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"$40", "client_name"=>"Gustav", "trainer"=>"Helga", "duration_mins"=>"30", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:47:00) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"40", "client_name"=>"Gustav", "trainer"=>"Helga", "duration_mins"=>"30", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;36;1mClientWorkout Create (2.0ms)[0m   [0;1mINSERT INTO "client_workouts" ("created_at", "client_name", "paid_amount", "trainer", "updated_at", "duration_mins", "date_of_workout") VALUES('2010-07-25 17:47:00', 'Gustav', 40.0, 'Helga', '2010-07-25 17:47:00', 30, '2010-07-25')[0m
+Redirected to http://localhost:3000/client_workouts/3
+Completed in 78ms (DB: 2) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-25 10:47:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 3) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts/3]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:47:04) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#edit (for 127.0.0.1 at 2010-07-25 10:47:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/edit
+Completed in 94ms (View: 87, DB: 0) | 200 OK [http://localhost/client_workouts/1/edit]
+
+
+Processing ClientWorkoutsController#update (for 127.0.0.1 at 2010-07-25 10:47:16) [PUT]
+  Parameters: {"commit"=>"Update", "client_workout"=>{"paid_amount"=>"$400", "client_name"=>"Michael McGuire", "trainer"=>"Helga", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"22"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI=", "id"=>"1"}
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/edit
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#update (for 127.0.0.1 at 2010-07-25 10:47:23) [PUT]
+  Parameters: {"commit"=>"Update", "client_workout"=>{"paid_amount"=>"400.00", "client_name"=>"Michael McGuire", "trainer"=>"Helga", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"22"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI=", "id"=>"1"}
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+  [4;36;1mClientWorkout Update (10.0ms)[0m   [0;1mUPDATE "client_workouts" SET "updated_at" = '2010-07-25 17:47:23', "paid_amount" = 400.0 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/client_workouts/1
+Completed in 70ms (DB: 10) | 302 Found [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-25 10:47:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:49:10) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:52:45) [GET]
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `validates_presence_of_client' for #<Class:0xf32f3b8>):
+  app/models/client_workout.rb:4
+  app/controllers/client_workouts_controller.rb:5:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:52:58) [GET]
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-25 10:53:00) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:53:15) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 36ms (View: 24, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:53:51) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 30ms (View: 17, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:54:01) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:54:26) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 30ms (View: 18, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:54:29) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 31ms (View: 19, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:54:45) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"25", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-25 10:54:50) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 27ms (View: 18, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:55:05) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"100", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:56:31) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"100", "client_name"=>"Barbie", "trainer"=>"Bob", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"25"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;36;1mClientWorkout Create (2.0ms)[0m   [0;1mINSERT INTO "client_workouts" ("created_at", "client_name", "paid_amount", "trainer", "updated_at", "duration_mins", "date_of_workout") VALUES('2010-07-25 17:56:31', 'Barbie', 100.0, 'Bob', '2010-07-25 17:56:31', 90, '2010-07-25')[0m
+Redirected to http://localhost:3000/client_workouts/4
+Completed in 86ms (DB: 2) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-25 10:56:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mClientWorkout Load (1.0ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 4) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 23ms (View: 8, DB: 1) | 200 OK [http://localhost/client_workouts/4]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 10:56:37) [GET]
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2010-07-25 10:56:49) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 10:57:09) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"100", "client_name"=>"Barbie", "trainer"=>"Michael", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"20"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2010-07-25 11:02:12) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"paid_amount"=>"100", "client_name"=>"Barbie", "trainer"=>"Michael", "duration_mins"=>"90", "date_of_workout(1i)"=>"2010", "date_of_workout(2i)"=>"7", "date_of_workout(3i)"=>"20"}, "authenticity_token"=>"3oSmUm42aj5gcs2DXRIt4z8TnGEo3R31L3yvNZPgwgI="}
+  [4;35;1mClientWorkout Create (1.0ms)[0m   [0mINSERT INTO "client_workouts" ("created_at", "client_name", "paid_amount", "trainer", "updated_at", "duration_mins", "date_of_workout") VALUES('2010-07-25 18:02:12', 'Barbie', 100.0, 'Michael', '2010-07-25 18:02:12', 90, '2010-07-20')[0m
+Redirected to http://localhost:3000/client_workouts/5
+Completed in 59ms (DB: 1) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2010-07-25 11:02:12) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mClientWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 5) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/client_workouts/5]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 11:02:15) [GET]
+  [4;35;1mClientWorkout Load (0.0ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 11:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/mebay" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 11:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/mebay" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2010-07-25 12:04:20) [GET]
+  [4;36;1mClientWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 65ms (View: 56, DB: 1) | 200 OK [http://localhost/client_workouts]

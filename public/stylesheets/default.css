@@ -1,0 +1,18 @@
+/* stylesheet for client_workout.html.erb
+*/
+*	{margin:0; padding:0;}
+div#header
+	{	width: 500px;
+		margin-left: 50px;
+		border: solid black 1px;
+		border-radius: 5px;	
+		padding-top: 10px;
+		padding-bottom: 10px;
+			
+	}
+h1	{	text-align: center;
+	}
+	
+.blue	
+	{	background-color: aqua;	
+	}
